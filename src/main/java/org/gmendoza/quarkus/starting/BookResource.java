@@ -14,9 +14,10 @@ public class BookResource {
     @GET
     public List<Book> getBooks() {
         return List.of(
-                new Book(1,"Understanding Kotlin", "Geovanny", 2025, "IT" ),
-                new Book(2,"Understanding Quarkus", "Omar", 2024, "IT" ),
-                new Book(3,"Understanding Java", "Elena", 2023, "IT" )
+                new Book(1,"Understanding Kotlin", "Geovanny Mendoza", 2025, "IT" ),
+                new Book(2,"Understanding Quarkus", "Omar Berroteran", 2024, "IT" ),
+                new Book(3,"Understanding Java", "Elena Aguirre", 2023, "IT" ),
+                new Book(4,"Effective Java in Action", "Gerardo Nuñez", 2022, "IT" )
         );
     }
 }
