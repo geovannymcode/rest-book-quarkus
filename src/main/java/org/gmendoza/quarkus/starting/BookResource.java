@@ -33,7 +33,4 @@ public class BookResource {
         return bookRepository.getBook(id);
     }
 
-
-
-
 }

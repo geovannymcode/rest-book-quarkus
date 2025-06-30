@@ -27,7 +27,4 @@ public class BookRepository {
         return getAllBooks().stream().filter(book -> book.id==id).findFirst();
     }
 
-    
-
-
 }
