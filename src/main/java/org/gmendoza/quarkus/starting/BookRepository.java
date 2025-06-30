@@ -6,6 +6,7 @@ import jakarta.ws.rs.Path;
 import jakarta.ws.rs.PathParam;
 import jakarta.ws.rs.Produces;
 import jakarta.ws.rs.core.MediaType;
+import org.eclipse.microprofile.config.inject.ConfigProperty;
 
 import java.util.List;
 import java.util.Optional;
@@ -13,13 +14,15 @@ import java.util.Optional;
 @ApplicationScoped
 public class BookRepository {
 
+    @ConfigProperty(name = "books.genre", defaultValue = "Sci-Fi")
+    String genre;
 
     public List<Book> getAllBooks() {
         return List.of(
-                new Book(1,"Understanding Kotlin", "Geovanny Mendoza", 2025, "IT" ),
-                new Book(2,"Understanding Quarkus", "Omar Berroteran", 2024, "IT" ),
-                new Book(3,"Understanding Java", "Elena Aguirre", 2023, "IT" ),
-                new Book(4,"Effective Java in Action", "Gerardo Nuñez", 2022, "IT" )
+                new Book(1,"Understanding Kotlin", "Geovanny Mendoza", 2025, genre ),
+                new Book(2,"Understanding Quarkus", "Omar Berroteran", 2024, genre ),
+                new Book(3,"Understanding Java", "Elena Aguirre", 2023, genre ),
+                new Book(4,"Effective Java in Action", "Gerardo Nuñez", 2022, genre )
         );
     }
 
