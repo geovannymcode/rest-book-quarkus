@@ -31,3 +31,32 @@ src/
 │       ├── BookResourceTest.java
 │       └── BookResourceIT.java
 ```
+
+---
+
+## 🛠️ Cómo ejecutar el proyecto
+
+### Requisitos:
+- Java 21
+- Maven 3.9+
+- Docker (opcional para imagen nativa)
+
+### Modo desarrollo
+```bash
+./mvnw quarkus:dev
+```
+
+### Empaquetado tradicional
+```bash
+./mvnw package
+java -jar target/quarkus-app/quarkus-run.jar
+```
+
+### Compilación nativa con Docker
+```bash
+./mvnw package -Dquarkus.package.type=native -Dquarkus.container-image.build=true
+```
+
+---
+
+
