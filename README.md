@@ -59,4 +59,34 @@ java -jar target/quarkus-app/quarkus-run.jar
 
 ---
 
+## 📑 Endpoints disponibles
+
+- `GET /books` → Listar libros
+- `POST /books` → Crear un libro
+- `GET /books/{id}` → Obtener un libro por ID
+- `DELETE /books/{id}` → Eliminar un libro
+
+*(Definidos en `BookResource.java`)*
+
+---
+
+## ✅ Pruebas
+
+Este proyecto incluye pruebas unitarias y de integración usando JUnit 5 y RestAssured.
+
+```bash
+./mvnw test
+```
+
+---
+
+## 🐳 Docker (Imagen Nativa)
+
+El proyecto está configurado para crear imágenes nativas utilizando el plugin `quarkus-container-image-docker`. Asegúrate de tener Docker instalado y ejecutándose.
+
+```bash
+./mvnw clean package -Dquarkus.package.type=native -Dquarkus.container-image.build=true
+```
+
+---
 
