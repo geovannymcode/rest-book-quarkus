@@ -90,3 +90,15 @@ El proyecto está configurado para crear imágenes nativas utilizando el plugin 
 
 ---
 
+
+## 👤 Autor
+
+**Geovanny Mendoza**  
+Repositorio: [github.com/geovannymcode](https://github.com/geovannymcode)  
+Proyecto: [`rest-book-quarkus`](https://github.com/geovannymcode/rest-book-quarkus)
+
+---
+
+## 📄 Licencia
+
+Este proyecto está bajo la licencia MIT.
